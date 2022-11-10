@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-body, header nav,.container-links ul, #rewards, #home, #games, .container-games,.games-picture {
+body, header nav,.container-links ul, #rewards, #home, #games, .container-games,.games-picture, .container-contact, .social-media{
     
     display: flex;
     
@@ -70,7 +70,7 @@ header nav{
     
 }
 
-header nav .container-logo{
+header nav .container-logo p{
     
     font-size: 1.7rem;
     font-weight: 800;
@@ -155,7 +155,7 @@ margin-bottom: 40px;
 #rewards .rewards-description{
     width: 60%;
     background: rgba(196, 2, 0, 0.56);
-    padding: 0px 80px;
+    padding: 20px 80px;
     border-radius: 40px;
 }
 
@@ -173,4 +173,30 @@ margin-bottom: 40px;
 #rewards .rewards-description button p{
     margin: 0px;
 }
+
+#contact{
+    background: #f5f5f4;
+    height: fit-content;
+}
     
+ #contact, .container-contact{
+    align-items: center;
+    flex-direction: column;
+    color: #B10705;
+}
+
+#contact .container-contact .social-media{
+   padding: 20px 0;
+   
+   justify-content: space-between;
+   width: 200px;
+   
+}
+
+#contact .container-contact p{
+    bottom:20px;
+    color: var(--text-secondary);
+  
+
+}
+
