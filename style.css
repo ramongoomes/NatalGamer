@@ -3,7 +3,8 @@
 :root{
     --bg-primary:#B10705;
     --bd-secondary:#f5f5f4;
-    --text-primary:#f5f5f4;
+    --text-primary:#e9e9e9;
+    --text-light:rgba(255, 255, 255, 1);
     --text-secondary:#161212;
     --bg-btn: rgba(255, 255, 255, 0.17);
 }
@@ -13,7 +14,7 @@
     box-sizing: border-box;
 }
 
-body, header nav,.container-links ul, #home, #games, .container-games,.games-picture {
+body, header nav,.container-links ul, #rewards, #home, #games, .container-games,.games-picture {
     
     display: flex;
     
@@ -31,6 +32,7 @@ p{
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
+    color: var( --text-light);
 }
 
 button{
@@ -46,7 +48,7 @@ header{
     width: 80%;
 }
 
-section{
+section, footer{
     width: 100%;
     height: 100vh;
 }
@@ -92,7 +94,7 @@ header nav .container-links ul li a{
     line-height: 1.5rem;
 }
 
-#home {
+#home, #rewards {
 
     align-items: center;
     width: 80%;
@@ -144,4 +146,31 @@ margin-bottom: 40px;
     padding: 0 30px;
 }
 
+#rewards {
+    width: 80%;
+    align-items: center;
 
+}
+
+#rewards .rewards-description{
+    width: 60%;
+    background: rgba(196, 2, 0, 0.56);
+    padding: 0px 80px;
+    border-radius: 40px;
+}
+
+#rewards .rewards-description h1{
+    margin: 0px 0 24px 0;
+}
+
+#rewards .rewards-description p{
+    margin-bottom: 26px;
+}
+#rewards .rewards-description button{
+    margin-top: 26px;
+}
+
+#rewards .rewards-description button p{
+    margin: 0px;
+}
+    
