@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --bg-primary:#B10705;
+    --bd-secondary:#f5f5f4;
+    --text-primary:#f5f5f4;
+    --text-secondary:#161212;
+    --bg-btn: rgba(255, 255, 255, 0.17);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, header nav,.container-links ul, #home, #games, .container-games,.games-picture {
+    
+    display: flex;
+    
+}
+
+
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.25rem;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+button{
+    
+    padding: 8px 40px;
+    background-color: var(--bg-btn);
+    border: 2px solid var(--text-primary);
+    border-radius: 8px;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+header{
+    width: 80%;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav{
+    /* background-color: #f5f5f4; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+header nav .container-logo{
+    
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+
+
+
+header nav .container-links ul li{
+    padding: 0 25px;
+    list-style: none;
+    
+}
+
+header nav .container-links ul li a{
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+#home {
+
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#home .home-descripition{
+    width: 50%;
+}
+
+#home .home-descripition h1{
+    margin-top: -60px;
+    margin-bottom: 25px;
+}
+
+#home .home-descripition button{
+    margin: 45px auto 0;
+}
+
+#home .home-picture{
+    text-align: left;
+}
+
+#games {
+    width:100%;
+    background: var(--bd-secondary);
+    align-items: center;
+    justify-content: center;
+}
+
+#games .container-games{
+    
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-secondary);
+    margin-top: -150px;
+}
+
+#games .container-games h1{
+margin-bottom: 40px;
+}
+
+#games .container-games p{
+    margin-bottom: 45px;
+}
+
+#games .games-picture img{
+    padding: 0 30px;
+}
+
+
