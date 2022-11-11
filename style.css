@@ -13,6 +13,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:target{
+    scroll-margin-top:4.9rem;
+  }
+
+html{
+    scroll-behavior: smooth;
+    
+}
 
 body, header nav,.container-links ul, #rewards, #home, #games, .container-games,.games-picture, .container-contact, .social-media{
     
@@ -36,7 +44,8 @@ p{
 }
 
 button{
-    
+    display: flex;
+    align-items: center;
     padding: 8px 40px;
     background-color: var(--bg-btn);
     border: 2px solid var(--text-primary);
@@ -44,6 +53,12 @@ button{
     color: var(--text-primary);
     cursor: pointer;
 }
+button svg{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
 header{
     width: 80%;
 }
@@ -94,6 +109,11 @@ header nav .container-links ul li a{
     line-height: 1.5rem;
 }
 
+header nav .container-links ul li a:hover{
+    border-bottom: 2px solid var(--text-primary);
+    
+}
+
 #home, #rewards {
 
     align-items: center;
@@ -103,11 +123,19 @@ header nav .container-links ul li a{
 
 #home .home-descripition{
     width: 50%;
+    top: 100px ;
+    background: rgba(196, 2, 0, 0.56);
+    padding: 80px 80px 30px;
+    border-radius: 40px;
 }
 
 #home .home-descripition h1{
     margin-top: -60px;
     margin-bottom: 25px;
+}
+
+#home .home-descripition button{
+    margin: 45px auto 0;
 }
 
 #home .home-descripition button{

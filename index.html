@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natal Gamer</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
 </head>
-<body>
+<body data-aos="zoom-in-left">
 
     <header>
         <nav>
@@ -19,17 +19,17 @@
 
             <div class="container-links">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Jogos</a></li>
-                    <li><a href="#">Rewards</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Jogos</a></li>
+                    <li><a href="#rewards">Rewards</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <section id="home">
-        <div class="home-descripition">
+        <div class="home-descripition" >
             <h1>Feliz Natal <br>
                 e Feliz Ano Novo!</h1>
 
@@ -37,21 +37,22 @@
                     <br> a pessoa amada e compartilhe a alegria do Natal.</p>
 
                 <button>
-                    <p>Saiba mais</p>
+                    <p>Saiba mais </p><i data-feather="plus-square"></i>
                 </button>
         </div>           
-        <div class="home-picture">
+        <div class="home-picture" data-aos="fade-down" data-aos-duration="3000">
             <img src="/img/controle-xbox.png" alt="Joystick Xbox Series S">
         </div>
 
     </section>
 
-    <section id="games">
+    <section id="games" data-aos="fade-up"
+    data-aos-duration="3000">
         <div class="container-games">
             <h1>Jogos</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, expedita.</p>
 
-            <div class="games-picture">
+            <div class="games-picture" >
                 <img src="/img/far-cry.png" alt="Far Cry 5">
                 <img src="/img/forza.png" alt="Forza Horizon 5">
                 <img src="/img/fifa.png" alt="Fifa 22">
@@ -59,7 +60,8 @@
             </div>
         </div>
     </section>
-    <section id="rewards">
+    <section id="rewards" data-aos="fade-up"
+    data-aos-duration="3000">
         
         <div class="rewards-picture">
             <img src="/img/xbox.png" alt="Xbox Series X">
@@ -71,7 +73,7 @@
 
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam totam odio harum odit cumque temporibus repellendus itaque debitis quod neque?</p>
                 <button>
-                    <p>Conheça!</p>
+                    <p>Conheça! </p><i data-feather="arrow-right"></i>
                 </button>
             
         </div>
@@ -92,9 +94,10 @@
             </p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         feather.replace()
+        AOS.init();
         </script>
         
 </body>
